@@ -1,5 +1,5 @@
 const details = document.getElementById('movie-details');
-const API_KEY = 'eaebfd3c';
+const API_KEY = "eaebfd3cI";
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 
@@ -9,6 +9,7 @@ if (id) {
         .then(data => {
             details.innerHTML = `
         <h2>${data.Title} (${data.Year})</h2>
+       
         <img src="${data.Poster !== 'N/A' ? data.Poster : ''}" alt="${data.Title}" />
         <p><strong>Жанр:</strong> ${data.Genre}</p>
         <p><strong>Режиссёр:</strong> ${data.Director}</p>

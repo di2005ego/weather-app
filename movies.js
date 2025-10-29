@@ -1,8 +1,7 @@
 const list = document.getElementById('movie-list');
 const form = document.getElementById('movie-form');
-const API_KEY = 'eaebfd3c'; // получи на omdbapi.com
+const API_KEY = "eaebfd3cI";
 
-// Популярные фильмы
 const popular = ["Inception","The Dark Knight","Interstellar","Avatar","Titanic"];
 
 async function loadPopular() {
