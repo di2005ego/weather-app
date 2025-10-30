@@ -17,7 +17,6 @@ form.addEventListener('submit', async (e) => {
     result.textContent = 'Загрузка...';
 
     try {
-        // API: https://api.exchangerate.host/convert
         const response = await fetch(`https://api.exchangerate.host/convert?access_key=${API_KEY}&from=${from}&to=${to}&amount=${amount}`);
         const data = await response.json();
 
