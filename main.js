@@ -5,7 +5,6 @@ btn.addEventListener("click", async () => {
   const city = document.getElementById("cityInput").value.trim();
   if (!city) return alert("Введите город!");
 
-  // 1️⃣ Запрос координат города
   const geoResp = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${city}`);
   const geoData = await geoResp.json();
 
@@ -16,7 +15,6 @@ btn.addEventListener("click", async () => {
 
   const { latitude, longitude, name, country } = geoData.results[0];
 
-  // 2️⃣ Запрос текущей погоды
   const weatherResp = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`);
   const weatherData = await weatherResp.json();
 

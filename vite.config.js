@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/', // если деплоишь на GitHub Pages, иначе можно '/'
+  base: '/',
   build: {
     rollupOptions: {
       // указываем все HTML-файлы как точки входа
