@@ -1,6 +1,6 @@
 const list = document.getElementById('movie-list');
 const form = document.getElementById('movie-form');
-const API_KEY = "eaebfd3cI";
+const API_KEY = "1eeaebfd";
 
 const popular = ["Inception","The Dark Knight","Interstellar","Avatar","Titanic"];
 
