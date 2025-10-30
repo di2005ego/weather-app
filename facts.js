@@ -8,7 +8,6 @@ document.getElementById("getFacts").addEventListener("click", async () => {
 
   const { latitude, longitude, name, country } = geoData.results[0];
 
-  // 4️⃣ Запрос к API Sunrise-Sunset
   const resp = await fetch(`https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&formatted=0`);
   const data = await resp.json();
 
