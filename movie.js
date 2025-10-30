@@ -1,5 +1,5 @@
 const details = document.getElementById('movie-details');
-const API_KEY = "eaebfd3cI";
+const API_KEY = "1eeaebfd";
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 
